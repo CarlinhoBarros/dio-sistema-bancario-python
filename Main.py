@@ -20,7 +20,7 @@ def depositar(valor):
         movimentos += f"Depósito: R$ {valor: .2f}\n"
 
 def sacar(valor):
-    global saldo, movimentos, LIMITE_SAQUES, VALOR_LIMITE
+    global saldo, movimentos, saques, LIMITE_SAQUES, VALOR_LIMITE
     if(valor <= 0):
         print("Valor inválido!")
     elif(valor > saldo):
@@ -33,6 +33,7 @@ def sacar(valor):
         print(f"Saque de R$ {valor: .2f} realizado com sucesso!")
         saldo -= valor
         movimentos += f"Saque: R$ {valor: .2f}\n"
+        saques += 1
 
 def extrato():
     print("##### EXTRATO #####")
