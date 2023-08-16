@@ -1,5 +1,5 @@
 # dio-sistema-bancario-python
-Sistema simples utilizado os paradigmas de programação estruturada que permite registrar usuários, contas bancarias e realizar saque, depósito e exibir extrato das mesmas.
+Sistema simples utilizando os paradigmas de programação estruturada que permite registrar usuários, contas bancárias e realizar saque, depósito e exibir extrato das mesmas.
 
 ## Requisitos:
 ### Método ___saque___
