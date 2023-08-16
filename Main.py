@@ -107,7 +107,11 @@ def gerar_numero_conta(contas):
 
 def listar_contas(contas):
     for item in contas:
-        print(item)
+        print(f"""
+Agencia: \t{item['agencia']}
+Conta: \t\t{item['numero_conta']}
+Usuário: \t{item["usuario"]["nome"]}
+""")
 
 def cpf_cadastrado(cpf, usuarios):
     return True if cpf in usuarios else False
